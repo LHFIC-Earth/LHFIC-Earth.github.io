@@ -1,0 +1,18 @@
+# Main navigation links
+main:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Team"
+    url: /team/
+  - title: "Publications"
+    url: /publications/
+  - title: "Code & Data"
+    url: /code/
+  - title: "Results"
+    url: /results/
+  - title: "News"
+    url: /news/
+  - title: "Contact"
+    url: /contact/
