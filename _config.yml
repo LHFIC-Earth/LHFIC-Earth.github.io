@@ -1,36 +1,135 @@
 # Site Settings
 title: "LEARNED HIGH-FIDELITY IMAGE COMPRESSION OF EARTH OBSERVATION DATA"
-email: lhficearth@gmail.com
-description: >-
-  Advanced semi-supervised segmentation framework for ROI extraction from remote sensing imagery.
-  Funded research project using UNet, boundary-aware segmentation, and adversarial training.
-baseurl: ""
+title_separator: "-"
+name: "LHFIC-Earth"
+description: "Advanced Boundary-Aware Segmentation for Remote Sensing"
 url: "https://LHFIC-Earth.github.io"
 
-# Project Information
-project_name: "LEARNED HIGH-FIDELITY IMAGE COMPRESSION OF EARTH OBSERVATION DATA"
-pi_name: "Akshara P Byju"
-institution: "Arita School of Computing"
-funding_agency: "Anusandhan National Research Foundation"
-grant_number: "Grant No. XXXX-YYYY-ZZZZ"
+baseurl: ""
+repository: "LHFIC-Earth/LHFIC-Earth.github.io"
+teaser: # path to fallback teaser image
 
-# Build settings
+# Site Author
+author:
+  name: "Dr. Akshara P Byju"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "Principal Investigator<br>Department of Computer Science"
+  location: "Kerala, India"
+  email: "your.email@institution.ac.in"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:your.email@institution.ac.in"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yourusername"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=YOUR_ID"
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yourusername"
+    - label: "Institution"
+      icon: "fas fa-fw fa-link"
+      url: "https://your-institution.ac.in"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs
+  - /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
-# Navigation
-navigation:
-  - title: Home
-    url: /
-  - title: Team
-    url: /team.html
-  - title: Publications
-    url: /publications.html
-  - title: Code
-    url: /code.html
-  - title: Results
-    url: /results.html
-  - title: Contact
-    url: /contact.html
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+timezone: Asia/Kolkata
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Defaults
+defaults:
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
