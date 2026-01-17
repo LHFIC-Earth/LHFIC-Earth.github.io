@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code & Data | ROI Extraction Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .code-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8rem 0 4rem; text-align: center; }
+        .code-hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .code-section { padding: 3rem 0; }
+        .code-card { background: white; border-radius: 12px; padding: 2.5rem; margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s; }
+        .code-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0,0,0,0.15); }
+        .code-card h3 { margin-bottom: 1rem; color: var(--dark); font-size: 1.75rem; }
+        .code-stats { display: flex; gap: 2rem; margin: 1.5rem 0; flex-wrap: wrap; }
+        .code-stat { display: flex; align-items: center; gap: 0.5rem; color: var(--gray); }
+        .download-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .download-card { background: var(--light-gray); border-radius: 12px; padding: 2rem; text-align: center; transition: 0.3s; }
+        .download-card:hover { background: var(--primary); color: white; }
+        .download-card:hover .download-icon { color: white; }
+        .download-icon { font-size: 3rem; color: var(--primary); margin-bottom: 1rem; }
+        .download-size { font-size: 0.9rem; color: var(--gray); margin-top: 0.5rem; }
+        .badge { display: inline-block; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; }
+        .badge-license { background: #10b981; color: white; }
+        .badge-stars { background: #fbbf24; color: #78350f; }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="nav-brand"><a href="index.html">ROI Project</a></div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="code.html" class="active">Code</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="code-hero">
+        <div class="container">
+            <h1>Code & Data</h1>
+            <p>Open-source implementation and datasets</p>
+        </div>
+    </section>
+
+    <!-- GitHub Repository -->
+    <section class="code-section">
+        <div class="container">
+            <div class="code-card" style="text-align: center;">
+                <i class="fab fa-github" style="font-size: 4rem; color: var(--primary); margin-bottom: 1rem;"></i>
+                <h3>GitHub Repository</h3>
+                <p style="color: var(--gray); font-size: 1.125rem; margin-bottom: 1.5rem;">
+                    Semi-Supervised ROI Extraction Toolkit - Production-ready Python implementation
+                </p>
+                <div class="code-stats" style="justify-content: center;">
+                    <span class="badge badge-stars">⭐ 127 Stars</span>
+                    <span class="badge badge-license">MIT License</span>
+                </div>
+                <a href="https://github.com/yourusername/roi-extraction-toolkit" target="_blank" class="btn btn-primary" style="margin-top: 1rem; font-size: 1.125rem;">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads -->
+    <section class="code-section gray-bg">
+        <div class="container">
+            <h2 class="section-title">Downloads</h2>
+            
+            <div class="download-grid">
+                
+                <div class="download-card">
+                    <div class="download-icon"><i class="fas fa-download"></i></div>
+                    <h4>Source Code</h4>
+                    <p>Complete Python implementation</p>
+                    <p class="download-size">8 files, 1,320 lines</p>
+                    <a href="https://github.com/yourusername/roi-extraction-toolkit/archive/refs/heads/main.zip" class="btn btn-outline" style="margin-top: 1rem;">Download ZIP</a>
+                </div>
+
+                <div class="download-card">
+                    <div class="download-icon"><i class="fas fa-brain"></i></div>
+                    <h4>Pretrained Model</h4>
+                    <p>UNet-EfficientNet-B3 weights</p>
+                    <p class="download-size">131 MB</p>
+                    <a href="https://github.com/yourusername/roi-extraction-toolkit/releases/download/v1.0/best_model.pth" class="btn btn-outline" style="margin-top: 1rem;">Download Model</a>
+                </div>
+
+                <div class="download-card">
+                    <div class="download-icon"><i class="fas fa-database"></i></div>
+                    <h4>WHU Dataset</h4>
+                    <p>Enhanced boundary annotations</p>
+                    <p class="download-size">2.1 GB</p>
+                    <a href="https://zenodo.org/record/8765432" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">Download Dataset</a>
+                </div>
+
+                <div class="download-card">
+                    <div class="download-icon"><i class="fab fa-docker"></i></div>
+                    <h4>Docker Image</h4>
+                    <p>Ready-to-run container</p>
+                    <p class="download-size">Latest version</p>
+                    <a href="https://hub.docker.com/r/yourusername/roi-extraction" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">Get Docker</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation -->
+    <section class="code-section">
+        <div class="container">
+            <h2 class="section-title">Quick Installation</h2>
+            
+            <div class="code-card">
+                <h3>Clone and Install</h3>
+                <div style="background: #1e293b; color: #10b981; padding: 1.5rem; border-radius: 8px; font-family: 'Courier New', monospace; margin: 1.5rem 0;">
+# Clone repository<br>
+git clone https://github.com/yourusername/roi-extraction-toolkit.git<br>
+cd roi-extraction-toolkit<br><br>
+# Install dependencies<br>
+pip install -r requirements.txt<br><br>
+# Configure paths in config.py<br>
+nano config.py<br><br>
+# Run training<br>
+python main.py
+                </div>
+            </div>
+
+            <div class="code-card">
+                <h3>Using Docker</h3>
+                <div style="background: #1e293b; color: #10b981; padding: 1.5rem; border-radius: 8px; font-family: 'Courier New', monospace; margin: 1.5rem 0;">
+# Pull Docker image<br>
+docker pull yourusername/roi-extraction:latest<br><br>
+# Run container<br>
+docker run --gpus all -v /data:/data yourusername/roi-extraction
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation -->
+    <section class="code-section gray-bg">
+        <div class="container">
+            <h2 class="section-title">Documentation & Support</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                
+                <div class="code-card">
+                    <h3><i class="fas fa-book"></i> Documentation</h3>
+                    <p style="color: var(--gray);">Complete API documentation and usage guides</p>
+                    <a href="https://roi-extraction.readthedocs.io" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">Read Docs</a>
+                </div>
+
+                <div class="code-card">
+                    <h3><i class="fab fa-github"></i> GitHub Issues</h3>
+                    <p style="color: var(--gray);">Report bugs or request features</p>
+                    <a href="https://github.com/yourusername/roi-extraction-toolkit/issues" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">Open Issue</a>
+                </div>
+
+                <div class="code-card">
+                    <h3><i class="fas fa-comments"></i> Discussions</h3>
+                    <p style="color: var(--gray);">Ask questions and share ideas</p>
+                    <a href="https://github.com/yourusername/roi-extraction-toolkit/discussions" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">Join Discussion</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Citation -->
+    <section class="code-section">
+        <div class="container">
+            <h2 class="section-title">Citation</h2>
+            
+            <div class="code-card">
+                <h3>If you use our code or data, please cite:</h3>
+                <div style="background: #1e293b; color: #e2e8f0; padding: 1.5rem; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 0.9rem; margin: 1.5rem 0; overflow-x: auto;">
+@inproceedings{yourname2025fixmatch,<br>
+&nbsp;&nbsp;title={FixMatch Meets Remote Sensing},<br>
+&nbsp;&nbsp;author={Your Name and Rajesh Kumar M. and Co-PI Name},<br>
+&nbsp;&nbsp;booktitle={IEEE IGARSS},<br>
+&nbsp;&nbsp;year={2025}<br>
+}
+                </div>
+                <a href="publications.html" class="btn btn-outline">View All Publications</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 ROI Extraction Project. Funded by DST, India.</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
