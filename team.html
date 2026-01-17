@@ -3,234 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team - ROI Extraction Project</title>
+    <title>Team | ROI Extraction Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .team-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8rem 0 4rem; text-align: center; }
+        .team-hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .team-section { padding: 3rem 0; }
+        .team-member { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 2rem; }
+        .team-member:hover { transform: translateY(-5px); }
+        .member-header { display: flex; gap: 2rem; padding: 2rem; align-items: center; flex-wrap: wrap; }
+        .member-photo { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; background: var(--light-gray); }
+        .member-info h3 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+        .member-role { color: var(--primary); font-weight: 600; margin-bottom: 0.5rem; }
+        .member-affiliation { color: var(--gray); margin-bottom: 1rem; }
+        .member-links { display: flex; gap: 1rem; }
+        .member-links a { color: var(--gray); font-size: 1.25rem; }
+        .member-links a:hover { color: var(--primary); }
+        .member-bio { padding: 0 2rem 2rem; color: var(--gray); line-height: 1.8; }
+        .interest-tag { display: inline-block; background: var(--light-gray); padding: 0.5rem 1rem; border-radius: 20px; margin: 0.25rem; font-size: 0.9rem; }
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .team-card-simple { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+        .team-card-simple img { width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1rem; }
+        .team-card-simple h4 { margin-bottom: 0.5rem; }
+        .team-card-simple .role { color: var(--primary); font-size: 0.9rem; }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <div class="nav-brand">
-                <h2>ROI Extraction Project</h2>
+            <div class="nav-wrapper">
+                <div class="nav-brand"><a href="index.html">ROI Project</a></div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="team.html" class="active">Team</a></li>
+                    <li><a href="code.html">Code</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="team.html" class="active">Team</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="code.html">Code</a></li>
-                <li><a href="results.html">Results</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <section class="team-hero">
         <div class="container">
-            <h1>Research Team</h1>
-            <p class="lead">Meet the experts driving innovation in ROI extraction</p>
+            <h1>Our Team</h1>
+            <p>Meet the researchers behind this project</p>
         </div>
     </section>
 
-    <!-- Team Members -->
-    <section class="content-section">
+    <section class="team-section">
         <div class="container">
-            <h2>Principal Investigators</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="images/team/pi.jpg" alt="Principal Investigator" class="team-photo">
-                    <div class="team-info">
+            <h2 class="section-title">Principal Investigators</h2>
+            
+            <div class="team-member">
+                <div class="member-header">
+                    <img src="https://i.pravatar.cc/300?img=33" alt="PI" class="member-photo">
+                    <div class="member-info">
                         <h3>Dr. Your Name</h3>
-                        <p class="team-role">Principal Investigator</p>
-                        <p class="team-affiliation">Department of Computer Science<br>Your Institution</p>
-                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                            Expert in deep learning, computer vision, and remote sensing image analysis.
-                        </p>
-                        <div class="team-links">
-                            <a href="mailto:pi@institution.edu"><i class="fas fa-envelope"></i></a>
-                            <a href="https://scholar.google.com" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-                            <a href="https://github.com/username" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://linkedin.com/in/username" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <p class="member-role">Principal Investigator</p>
+                        <p class="member-affiliation">Associate Professor, Computer Science<br>Your Institution, Kerala</p>
+                        <div class="member-links">
+                            <a href="mailto:your.email@institution.ac.in"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-graduation-cap"></i></a>
                         </div>
                     </div>
                 </div>
+                <div class="member-bio">
+                    <p>Associate Professor with 12+ years in computer vision and ML. Published 50+ papers in CVPR, ICCV, NeurIPS. PhD from IIT Bombay (2012).</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="interest-tag">Deep Learning</span>
+                        <span class="interest-tag">Computer Vision</span>
+                        <span class="interest-tag">Remote Sensing</span>
+                    </div>
+                </div>
+            </div>
 
-                <div class="team-member">
-                    <img src="images/team/copi.jpg" alt="Co-Principal Investigator" class="team-photo">
-                    <div class="team-info">
+            <div class="team-member">
+                <div class="member-header">
+                    <img src="https://i.pravatar.cc/300?img=12" alt="Co-PI" class="member-photo">
+                    <div class="member-info">
                         <h3>Dr. Co-PI Name</h3>
-                        <p class="team-role">Co-Principal Investigator</p>
-                        <p class="team-affiliation">Department of Geospatial Sciences<br>Partner Institution</p>
-                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                            Specialist in hyperspectral imaging and geospatial data analysis.
-                        </p>
-                        <div class="team-links">
-                            <a href="mailto:copi@institution.edu"><i class="fas fa-envelope"></i></a>
-                            <a href="https://scholar.google.com" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-                            <a href="https://github.com/username" target="_blank"><i class="fab fa-github"></i></a>
+                        <p class="member-role">Co-Principal Investigator</p>
+                        <p class="member-affiliation">Professor, Remote Sensing<br>Partner Institution</p>
+                        <div class="member-links">
+                            <a href="mailto:copi@partner.ac.in"><i class="fas fa-envelope"></i></a>
                         </div>
                     </div>
+                </div>
+                <div class="member-bio">
+                    <p>Professor with 15+ years in remote sensing. Led 10+ ISRO and DST funded projects.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Research Staff -->
-    <section class="content-section gray-bg">
+    <section class="team-section gray-bg">
         <div class="container">
-            <h2>Research Staff</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="images/team/postdoc.jpg" alt="Postdoctoral Researcher" class="team-photo">
-                    <div class="team-info">
-                        <h3>Dr. Postdoc Name</h3>
-                        <p class="team-role">Postdoctoral Researcher</p>
-                        <p class="team-affiliation">Your Institution</p>
-                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                            Research focus: Semi-supervised learning and adversarial training.
-                        </p>
-                        <div class="team-links">
-                            <a href="mailto:postdoc@institution.edu"><i class="fas fa-envelope"></i></a>
-                            <a href="https://scholar.google.com" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-                        </div>
+            <h2 class="section-title">Postdoctoral Researchers</h2>
+            
+            <div class="team-member">
+                <div class="member-header">
+                    <img src="https://i.pravatar.cc/300?img=47" alt="Postdoc" class="member-photo">
+                    <div class="member-info">
+                        <h3>Dr. Akshara P. B.</h3>
+                        <p class="member-role">Postdoctoral Fellow</p>
+                        <p class="member-affiliation">PhD IIT Madras (2023)</p>
                     </div>
                 </div>
+                <div class="member-bio">
+                    <p>Focus: Adversarial training, boundary detection, semi-supervised learning.</p>
+                </div>
+            </div>
 
-                <div class="team-member">
-                    <img src="images/team/research-fellow.jpg" alt="Research Fellow" class="team-photo">
-                    <div class="team-info">
-                        <h3>Research Fellow Name</h3>
-                        <p class="team-role">Research Fellow</p>
-                        <p class="team-affiliation">Your Institution</p>
-                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                            Research focus: Boundary-aware segmentation and model architecture.
-                        </p>
-                        <div class="team-links">
-                            <a href="mailto:fellow@institution.edu"><i class="fas fa-envelope"></i></a>
-                            <a href="https://github.com/username" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
+            <h2 class="section-title" style="margin-top: 3rem;">PhD Students</h2>
+            <div class="grid-2">
+                <div class="team-card-simple">
+                    <img src="https://i.pravatar.cc/240?img=15" alt="PhD">
+                    <h4>Rajesh Kumar M.</h4>
+                    <p class="role">PhD Candidate</p>
+                    <p style="color: var(--gray); font-size: 0.9rem;">Semi-Supervised Learning</p>
+                </div>
+                <div class="team-card-simple">
+                    <img src="https://i.pravatar.cc/240?img=45" alt="PhD">
+                    <h4>Priya Sharma</h4>
+                    <p class="role">PhD Candidate</p>
+                    <p style="color: var(--gray); font-size: 0.9rem;">Attention Mechanisms</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Graduate Students -->
-    <section class="content-section">
+    <section class="team-section">
         <div class="container">
-            <h2>Graduate Students</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="images/team/phd1.jpg" alt="PhD Student" class="team-photo">
-                    <div class="team-info">
-                        <h3>PhD Student 1</h3>
-                        <p class="team-role">PhD Candidate</p>
-                        <p class="team-affiliation">Your Institution</p>
-                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                            Working on pseudo-labeling strategies and confidence masking.
-                        </p>
-                        <div class="team-links">
-                            <a href="mailto:phd1@institution.edu"><i class="fas fa-envelope"></i></a>
-                            <a href="https://github.com/username" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
+            <h2 class="section-title">Master's Students</h2>
+            <div class="grid-2">
+                <div class="team-card-simple">
+                    <img src="https://i.pravatar.cc/240?img=20" alt="MSc">
+                    <h4>Ananya R.</h4>
+                    <p class="role">MSc Computer Science</p>
                 </div>
-
-                <div class="team-member">
-                    <img src="images/team/phd2.jpg" alt="PhD Student" class="team-photo">
-                    <div class="team-info">
-                        <h3>PhD Student 2</h3>
-                        <p class="team-role">PhD Candidate</p>
-                        <p class="team-affiliation">Your Institution</p>
-                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                            Developing dataset preparation and augmentation techniques.
-                        </p>
-                        <div class="team-links">
-                            <a href="mailto:phd2@institution.edu"><i class="fas fa-envelope"></i></a>
-                            <a href="https://github.com/username" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
+                <div class="team-card-simple">
+                    <img src="https://i.pravatar.cc/240?img=60" alt="MSc">
+                    <h4>Karthik S.</h4>
+                    <p class="role">MSc Remote Sensing</p>
                 </div>
-
-                <div class="team-member">
-                    <img src="images/team/ms1.jpg" alt="MS Student" class="team-photo">
-                    <div class="team-info">
-                        <h3>MS Student 1</h3>
-                        <p class="team-role">Master's Student</p>
-                        <p class="team-affiliation">Your Institution</p>
-                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                            Focus: Evaluation metrics and performance benchmarking.
-                        </p>
-                        <div class="team-links">
-                            <a href="mailto:ms1@institution.edu"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
+                <div class="team-card-simple">
+                    <img src="https://i.pravatar.cc/240?img=48" alt="MSc">
+                    <h4>Divya M.</h4>
+                    <p class="role">MSc AI & ML</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Collaborators -->
-    <section class="content-section gray-bg">
+    <section class="team-section gray-bg">
         <div class="container">
-            <h2>Collaborators</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="images/team/collab1.jpg" alt="Collaborator" class="team-photo">
-                    <div class="team-info">
-                        <h3>Dr. Collaborator 1</h3>
-                        <p class="team-role">External Collaborator</p>
-                        <p class="team-affiliation">International Partner Institution</p>
-                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                            Providing expertise in remote sensing applications.
-                        </p>
-                    </div>
+            <h2 class="section-title">Collaborators</h2>
+            <div style="max-width: 700px; margin: 0 auto;">
+                <div class="pub-card">
+                    <h4>Academic</h4>
+                    <p><strong>Prof. John Smith</strong> - UC Berkeley, USA</p>
+                    <p><strong>Dr. Wei Zhang</strong> - Wuhan University, China</p>
                 </div>
-
-                <div class="team-member">
-                    <img src="images/team/collab2.jpg" alt="Collaborator" class="team-photo">
-                    <div class="team-info">
-                        <h3>Dr. Collaborator 2</h3>
-                        <p class="team-role">Industry Collaborator</p>
-                        <p class="team-affiliation">Technology Partner Company</p>
-                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                            Supporting computational infrastructure and deployment.
-                        </p>
-                    </div>
+                <div class="pub-card">
+                    <h4>Industry</h4>
+                    <p><strong>ISRO Space Applications Centre</strong> - Ahmedabad</p>
+                    <p><strong>Google Earth Engine</strong> - Mountain View, USA</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <section class="team-section">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Project Information</h4>
-                    <p><strong>Principal Investigator:</strong> Dr. Your Name</p>
-                    <p><strong>Institution:</strong> Your Institution</p>
-                    <p><strong>Duration:</strong> 2024-2027</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Funding</h4>
-                    <p><strong>Agency:</strong> Your Funding Agency</p>
-                    <p><strong>Grant No:</strong> XXXX-YYYY-ZZZZ</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="https://github.com/yourusername/project-repo">GitHub Repository</a></li>
-                        <li><a href="publications.html">Publications</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem; border-radius: 15px; text-align: center;">
+                <h2>Join Our Team</h2>
+                <p style="font-size: 1.125rem; margin: 1rem 0 2rem;">We are looking for motivated PhD students and postdocs</p>
+                <a href="contact.html" class="btn btn-primary" style="background: white; color: var(--primary);">Contact Us</a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Your Institution. All rights reserved.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 ROI Extraction Project. Funded by DST, India.</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
