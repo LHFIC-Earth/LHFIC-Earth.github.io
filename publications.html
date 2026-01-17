@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | ROI Extraction Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .pub-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8rem 0 4rem; text-align: center; }
+        .pub-hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .pub-section { padding: 3rem 0; }
+        .pub-card { background: white; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .pub-card:hover { transform: translateY(-5px); }
+        .pub-card h3 { color: var(--dark); margin-bottom: 0.75rem; font-size: 1.5rem; }
+        .pub-authors { color: var(--gray); margin-bottom: 0.5rem; }
+        .pub-venue { color: var(--primary); font-weight: 600; margin-bottom: 1rem; }
+        .pub-links { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
+        .pub-link { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: var(--light-gray); border-radius: 6px; color: var(--dark); font-size: 0.9rem; }
+        .pub-link:hover { background: var(--primary); color: white; }
+        .badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; margin-left: 0.5rem; }
+        .badge-submitted { background: #fef3c7; color: #92400e; }
+        .badge-accepted { background: #d1fae5; color: #065f46; }
+        .badge-award { background: #fecaca; color: #991b1b; }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="nav-brand"><a href="index.html">ROI Project</a></div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="publications.html" class="active">Publications</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="code.html">Code</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pub-hero">
+        <div class="container">
+            <h1>Publications</h1>
+            <p>Research outputs from our DST-funded project</p>
+        </div>
+    </section>
+
+    <section class="pub-section">
+        <div class="container">
+            <h2 class="section-title">Journal Papers</h2>
+            <div class="pub-card">
+                <h3>Semi-Supervised Adversarial Learning for Boundary-Aware Building Extraction</h3>
+                <p class="pub-authors"><strong>Your Name</strong>, Co-PI Name, Rajesh Kumar M., Akshara P. B.</p>
+                <p class="pub-venue">IEEE Transactions on Geoscience and Remote Sensing <span class="badge badge-submitted">Submitted</span></p>
+                <p>Novel semi-supervised framework achieving 85.47% IoU using only 3.8% labeled data.</p>
+                <div class="pub-links">
+                    <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                    <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pub-section gray-bg">
+        <div class="container">
+            <h2 class="section-title">Conference Papers</h2>
+            <div class="pub-card">
+                <h3>FixMatch Meets Remote Sensing</h3>
+                <p class="pub-authors"><strong>Your Name</strong>, Rajesh Kumar M., Co-PI Name</p>
+                <p class="pub-venue">IEEE IGARSS 2025 <span class="badge badge-accepted">Published</span> <span class="badge badge-award">🏆 Best Poster</span></p>
+                <p>Adversarial validation for pseudo-label quality assessment in semi-supervised segmentation.</p>
+                <div class="pub-links">
+                    <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                    <a href="#" class="pub-link"><i class="fas fa-presentation"></i> Slides</a>
+                </div>
+            </div>
+            <div class="pub-card">
+                <h3>Boundary-Aware Attention Mechanisms</h3>
+                <p class="pub-authors">Priya Sharma, <strong>Your Name</strong></p>
+                <p class="pub-venue">CVPR 2025 Workshop <span class="badge badge-award">🏆 Best Poster</span></p>
+                <p>Dual-head architecture with scSE attention for precise building boundary extraction.</p>
+                <div class="pub-links">
+                    <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                    <a href="#" class="pub-link"><i class="fas fa-image"></i> Poster</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pub-section">
+        <div class="container">
+            <h2 class="section-title">Datasets & Software</h2>
+            <div class="pub-card">
+                <h3>WHU Building Dataset - Enhanced Boundary Annotations</h3>
+                <p class="pub-venue">Zenodo (Dec 2025) | DOI: 10.5281/zenodo.8765432</p>
+                <p>187 images with morphologically-refined boundary annotations (2-pixel radius).</p>
+                <div class="pub-links">
+                    <a href="#" class="pub-link"><i class="fas fa-download"></i> Download (2.1 GB)</a>
+                    <a href="#" class="pub-link"><i class="fas fa-book"></i> Documentation</a>
+                </div>
+            </div>
+            <div class="pub-card">
+                <h3>Semi-Supervised ROI Extraction Toolkit (v1.0)</h3>
+                <p class="pub-venue">GitHub (Dec 2025) | 127 ⭐ 34 🍴</p>
+                <p>Production-ready Python implementation with 8 modular files and pretrained weights.</p>
+                <div class="pub-links">
+                    <a href="#" class="pub-link"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#" class="pub-link"><i class="fas fa-download"></i> Weights (131 MB)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pub-section gray-bg">
+        <div class="container">
+            <h2 class="section-title">Media Coverage</h2>
+            <div class="pub-card">
+                <h3>IEEE GRSS Newsletter (Dec 2025)</h3>
+                <p>"Novel Method Reduces Annotation Costs by 80%"</p>
+                <a href="#" class="pub-link"><i class="fas fa-link"></i> Read</a>
+            </div>
+            <div class="pub-card">
+                <h3>The Hindu Science (Nov 2025)</h3>
+                <p>"Kerala Researchers Develop AI for Satellite Analysis"</p>
+                <a href="#" class="pub-link"><i class="fas fa-link"></i> Read</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 ROI Extraction Project. Funded by DST, India.</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
