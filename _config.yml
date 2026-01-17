@@ -1,0 +1,36 @@
+# Site Settings
+title: "LEARNED HIGH-FIDELITY IMAGE COMPRESSION OF EARTH OBSERVATION DATA"
+email: lhficearth@gmail.com
+description: >-
+  Advanced semi-supervised segmentation framework for ROI extraction from remote sensing imagery.
+  Funded research project using UNet, boundary-aware segmentation, and adversarial training.
+baseurl: ""
+url: "https://LHFIC-Earth.github.io"
+
+# Project Information
+project_name: "LEARNED HIGH-FIDELITY IMAGE COMPRESSION OF EARTH OBSERVATION DATA"
+pi_name: "Akshara P Byju"
+institution: "Arita School of Computing"
+funding_agency: "Anusandhan National Research Foundation"
+grant_number: "Grant No. XXXX-YYYY-ZZZZ"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Team
+    url: /team.html
+  - title: Publications
+    url: /publications.html
+  - title: Code
+    url: /code.html
+  - title: Results
+    url: /results.html
+  - title: Contact
+    url: /contact.html
