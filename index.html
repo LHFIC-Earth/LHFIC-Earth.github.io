@@ -213,6 +213,25 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script> <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const newsCards = document.querySelectorAll('#news-slider .news-card');
+            let currentIndex = 0;
+
+            if (newsCards.length > 0) {
+                newsCards[0].classList.add('active');
+            }
+
+            function rotateNews() {
+                newsCards[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % newsCards.length;
+                newsCards[currentIndex].classList.add('active');
+            }
+
+            setInterval(rotateNews, 5000);
+        });
+    </script>
+
 </body>
 </html>
