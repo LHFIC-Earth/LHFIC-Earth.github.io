@@ -61,18 +61,22 @@
     <!-- About -->
     <section class="section" id="about">
         <div class="container">
-            <h2 class="section-title">Project Overview</h2>
+            <h2 class="section-title">LHFIC-Earth</h2>
             <div class="about-grid">
                 <div class="about-text">
-                    <p class="lead">This <strong>ANRF-funded project</strong> develops semi-supervised learning for ROI extraction from satellite imagery.</p>
-                    <p>Combining <strong>UNet + EfficientNet-B3</strong>, <strong>scSE attention</strong>, and <strong>PatchGAN discriminator</strong>.</p>
-                    <p>Achieves <strong>85.47% IoU</strong> with only <strong>187 labeled images</strong> (80% cost reduction).</p>
+                    <p class="lead">The rapid growth of remote sensing (RS) image archives due to advancements in satellite technology has created significant storage and processing
+                        challenges. Traditional compression methods such as DPCM, JPEG, and JPEG 2000 rely on transformation-based techniques and manual feature extraction, which become 
+                        inefficient for large-scale datasets. Recent deep learning approaches, particularly convolutional neural networks (CNNs), enable more efficient compression and 
+                        automatic feature learning. This work proposes the LHFIC-Earth framework, which adaptively allocates bit rates to pixels based on areas of interest to achieve 
+                        higher compression ratios. The study also explores feature extraction from compressed data for scene classification and analyzes the trade-off between computational
+                        complexity and performance. The proposed approach supports onboard processing in nanosatellite missions, enabling efficient data transmission and storage while 
+                        preserving important image information.</p>
                 </div>
                 <div class="about-img">
                     <img src="images/architecture.png" alt="Architecture">
                 </div>
             </div>
-            <div class="features">
+            <!-- <div class="features">
                 <div class="feature-card">
                     <i class="fas fa-brain"></i>
                     <h3> Extraction</h3>
@@ -92,7 +96,7 @@
                     <i class="fas fa-code"></i>
                     <h3>Production-Ready</h3>
                     <p>8 modular Python files</p>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
