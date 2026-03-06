@@ -35,7 +35,7 @@ a { text-decoration: none; color: inherit; transition: 0.3s; }
 /* Hero Section Background */
 .hero {
     position: relative;
-    background-image: url('images/hero-bg.png'); /* Ensure this image exists in your images folder */
+    background-image: url('../images/hero-bg.png'); /* Ensure this image exists in your images folder */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@ a { text-decoration: none; color: inherit; transition: 0.3s; }
 /* Bring the content in front of the overlay */
 .hero .container {
     position: relative;
-    z-index: 2;
+    z-index: 10;
 }
 .hero .container { position: relative; z-index: 2; }
 .hero-title { font-size: 3.5rem; font-weight: 800; margin-bottom: 1rem; line-height: 1.2; }
