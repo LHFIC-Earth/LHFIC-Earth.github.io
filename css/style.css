@@ -35,7 +35,7 @@ a { text-decoration: none; color: inherit; transition: 0.3s; }
 /* Hero Section Background */
 .hero {
     position: relative;
-    background-image: url('images/hero-bg.jpg'); /* Ensure this image exists in your images folder */
+    background-image: url('images/hero-bg.png'); /* Ensure this image exists in your images folder */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
