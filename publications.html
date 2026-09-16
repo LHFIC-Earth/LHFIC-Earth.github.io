@@ -85,10 +85,22 @@
                     <a href="https://github.com/LHFIC-Earth/M2Garsss" class="btn btn-primary"><i class="fas fa-github"></i> Code</a>
                 </div>
                             <div class="pub-card">
-                <h3>GeoRectNet: A Three-Stage Weakly Semi-Supervised Framework for Boundary-Preserving Building Region-Of-Interest Extraction</h3>
+                <h3>GEORECTNET: A THREE-STAGE WEAKLY SEMI-SUPERVISED FRAMEWORK FOR BOUNDARY-PRESERVING BUILDING REGION-OF-INTEREST EXTRACTION</h3>
                 <p class="pub-authors">Chukkala Nikhilesh Krishna, Namballa Kireeti Sai Bharadwaj, Vaigandla Hemanth Kumar, Dr. Akshara P Byju</p>
                 <p class="pub-venue">ACRS 2026 <span class="badge badge-accepted">Accepted</span> <span class="badge badge-award">🏆 </span></p>
-                <p></p>
+                <p>Extracting building footprints from satellite imagery is a challenging task due to ambiguous structural boundaries, 
+                    high annotation costs, and the fact that buildings typically occupy only a small fraction of an image scene. 
+                    Although transformer-based building extraction methods capture global context effectively, they often blur object 
+                    boundaries—the very regions where precision is most critical for downstream urban analysis. To address this limitation, 
+                    the proposed weakly supervised GeoRectNet model integrates an explicit edge branch alongside a standard vision transformer (ViT) encoder. 
+                    The proposed convolutional neural network (CNN)-based edge branch preserves fine, high-frequency boundary details that transformers 
+                    often smoothen out. A gated attention mechanism employed in the decoder controls how boundary signals merge into the extraction output. 
+                    The loss function is designed to enhance geometric quality through region supervision, boundary refinement, distance-based regularization, and 
+                    consistency constraints, with the goal of improving both semantic accuracy and structural fidelity. Training runs through a three-stage weakly 
+                    supervised pipeline: pseudo-label generation, refinement and edge-safe fine-tuning designed for annotation budgets of 10% or less. Benchmarking 
+                    on the WHU Building Dataset demonstrates a 65.19% mIoU and 71.61% Dice score, outperforming the ViT baseline by +3.02% mIoU and approaching fully supervised models 
+                    (U-Net, DeepLabV3+) while using one-tenth of the annotations. Additional evaluations on the INRIA dataset confirm strong cross-domain generalizability, 
+                    producing clean, vector-ready polygons for downstream GIS integration.</p>
                 <div class="pub-links">
                     <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
                     <a href="#" class="btn btn-primary"><i class="fas fa-github"></i> Code</a>
