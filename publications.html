@@ -84,6 +84,23 @@
                     <a href="https://ieeexplore.ieee.org/document/11582787" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
                     <a href="https://github.com/LHFIC-Earth/M2Garsss" class="btn btn-primary"><i class="fas fa-github"></i> Code</a>
                 </div>
+                <div class="pub-card">
+                <h3>Physics vs Information: Unraveling Masking Priors for Image Reconstruction in Hyperspectral Self-Supervised Learning</h3>
+                <p class="pub-authors">Santhu S Nampoothiri, Dr. Akshara P Byju, Dr. Lorenzo Bruzzone</p>
+                <p class="pub-venue">IEEE AGERS 2026 <span class="badge badge-accepted">Accepted</span> <span class="badge badge-award">🏆 </span></p>
+                <p>Masked reconstruction is the dominant pretext task for self-supervised pretraining of hyperspectral image (HSI) encoders. Yet, the question of where to mask is usually addressed
+                    either at random or with heuristics whose motivations are never compared head-to-head. This study compares physics-based and information-theoretic masking priors, which are the 
+                    two principled families of masking priors. The former targets absorption features, physically defined spectral regions, and spectral heterogeneity, while the latter targets bands and regions
+                    with high marginal entropy, high Gaussian conditional entropy, and high local spatial entropy. To ensure all strategies share a single sampler that masks the same fraction of voxels, they 
+                    are formulated as priors within a single Gumbel-top-𝑘 sampler and trained with the same Swin-Transformer encoder and U-Net decoder. We evaluate pretext reconstruction using PSNR, SAM,
+                    linear probe, and fine-tuned segmentation under different label budgets. The scene-adaptive physics prior (P-D) yields the highest linear-probe mIoU 29.1%, closely followed by the information-
+                    theoretic prior (I-C, 28.5%); physics-based masking is marginally best in low-label fine-tuning (24.1% with 1% labels); the hybrid prior attains the lowest SAM on diagnostic bands (2.92◦) and 
+                    improves over random tube masking by +4.3 mIoU in linear probing.</p>
+                <div class="pub-links">
+                    <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> PDF</a>
+                    <a href="#" class="btn btn-primary"><i class="fas fa-github"></i> Code</a>
+                </div>
+                
                             <div class="pub-card">
                 <h3>GEORECTNET: A THREE-STAGE WEAKLY SEMI-SUPERVISED FRAMEWORK FOR BOUNDARY-PRESERVING BUILDING REGION-OF-INTEREST EXTRACTION</h3>
                 <p class="pub-authors">Chukkala Nikhilesh Krishna, Namballa Kireeti Sai Bharadwaj, Vaigandla Hemanth Kumar, Dr. Akshara P Byju</p>
